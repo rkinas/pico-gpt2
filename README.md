@@ -6,9 +6,9 @@ Code golf of Karpathy's [micro-gpt](https://gist.github.com/karpathy/8627fe009c4
 
 | File | Lines | Chars | Description |
 |---|---|---|---|
-| `micro_gpt.py` | 192 | 8991 | Karpathy's original |
-| `nano_gpt.py` | 7 | 3143 | Minified variable names, lambda operators, `type()` class |
-| `pico_gpt.py` | 1 | 2043 | zlib + base85 compressed payload |
+| `microgpt.py` | 192 | 8991 | Karpathy's original |
+| `nanogpt.py` | 7 | 3143 | Minified variable names, lambda operators, `type()` class |
+| `picogpt.py` | 1 | 2043 | zlib + base85 compressed payload |
 
 All versions produce bit-identical output (same losses, same generated names).
 
