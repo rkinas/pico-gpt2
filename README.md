@@ -8,7 +8,7 @@ Code golf of Karpathy's [micro-gpt](https://gist.github.com/karpathy/8627fe009c4
 |---|---|---|---|
 | `microgpt.py` | 192 | 8991 | Karpathy's original |
 | `nanogpt.py` | 7 | 2824 | Minified variable names, lambda operators, `type()` class |
-| `picogpt.py` | 1 | 1908 | zlib + base85 compressed payload |
+| `picogpt.py` | 1 | 1907 | zlib + base85 compressed payload |
 
 All versions produce bit-identical output (same losses, same generated outputs).
 
