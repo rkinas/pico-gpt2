@@ -7,8 +7,8 @@ Code golf of Karpathy's [micro-gpt](https://gist.github.com/karpathy/8627fe009c4
 | File | Lines | Chars | Description |
 |---|---|---|---|
 | `microgpt.py` | 192 | 8991 | Karpathy's original |
-| `nanogpt.py` | 8 | 2489 | Minified variable names, lambda operators, `type()` class |
-| `nanogpt_formatted.py`| 1 | 3915 | Formatted (ruff) version of `nanogpt.py` for code study |
+| `picogpt.py` | 8 | 2489 | Minified variable names, lambda operators, `type()` class |
+| `picogpt_formatted.py`| 1 | 3915 | Formatted (ruff) version of `picogpt.py` for code study |
 
 
 All versions produce bit-identical output (same losses, same generated outputs).
@@ -28,5 +28,5 @@ Download dataset
 
 Run training
 ```
-uv run train_tiny.py
+uv run picogpt.py
 ```
