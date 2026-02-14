@@ -2,3 +2,4 @@ uv.lock
 .python-version
 .venv/
 compress.py
+input.txt

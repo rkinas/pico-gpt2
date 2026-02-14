@@ -7,8 +7,9 @@ Code golf of Karpathy's [micro-gpt](https://gist.github.com/karpathy/8627fe009c4
 | File | Lines | Chars | Description |
 |---|---|---|---|
 | `microgpt.py` | 192 | 8991 | Karpathy's original |
-| `nanogpt.py` | 7 | 2824 | Minified variable names, lambda operators, `type()` class |
-| `picogpt.py` | 1 | 1907 | zlib + base85 compressed payload |
+| `nanogpt.py` | 8 | 2489 | Minified variable names, lambda operators, `type()` class |
+| `nanogpt_formatted.py`| 1 | 3915 | Formatted (ruff) version of `nanogpt.py` for code study |
+
 
 All versions produce bit-identical output (same losses, same generated outputs).
 
@@ -18,9 +19,14 @@ uv venv
 ```
 
 ## Usage
+Download `input.txt` (names dataset) on first run, trains for 1000 steps, then generates 20 names.
 
+Download dataset
+```
+./download.sh
+```
+
+Run training
 ```
 uv run train_tiny.py
 ```
-
-Downloads `input.txt` (names dataset) on first run, trains for 1000 steps, then generates 20 names.
