@@ -4,14 +4,14 @@ Code golf of Karpathy's [micro-gpt](https://gist.github.com/karpathy/8627fe009c4
 
 ## Versions
 
-| File | Lines | Chars | Description |
-|---|---|---|---|
-| `microgpt.py` | 192 | 8991 | Karpathy's original |
-| `picogpt.py` | 8 | 2489 | Minified variable names, lambda operators, `type()` class |
-| `picogpt_formatted.py`| 1 | 3915 | Formatted (ruff) version of `picogpt.py` for code study |
+| File | Lines | Chars | Non-whitespace chars | Description |
+|---|---|---|---|---|
+| `microgpt.py` | 192 | 8991 | 5089 | Karpathy's original |
+| `picogpt.py` | 32 | 1998 | 1800 | Golfed: `class V`, standalone backward, S-list, inlined ops |
+| `picogpt_formatted.py`| 114 | 2761 | 1770 | Formatted version of `picogpt.py` for code study |
+| `picogpt_commented.py`| 540 | — | — | Heavily commented educational guide |
 
-
-All versions produce bit-identical output (same losses, same generated outputs).
+`picogpt.py` is a 65% reduction in non-whitespace characters vs the original (1800 vs 5089). All versions produce bit-identical output (same losses, same generated samples).
 
 ## Install
 ```
