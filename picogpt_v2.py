@@ -63,7 +63,7 @@ for s in Q(1000):
  L=T(V(m.log((q:=X(G(t[p],p,K,C))[t[p+1]]).d),((q,1/q.d),))for p in Q(n))*-n**-1
  O(L)
  j=s+1
- z=.01*(1-s/1000)
+ z=.01-s*1e-5
  i=0
  for p in P:
   M[i]=.85*M[i]+.15*p.g
