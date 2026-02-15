@@ -6,12 +6,14 @@ Code golf of Karpathy's [micro-gpt](https://gist.github.com/karpathy/8627fe009c4
 
 | File | Lines | Chars | Non-whitespace chars | Description |
 |---|---|---|---|---|
-| `microgpt.py` | 192 | 8991 | 5089 | Karpathy's original |
+| `microgpt.py` | 154 | 6819 | 5089 | Karpathy's original |
 | `picogpt.py` | 32 | 1998 | 1800 | Golfed: `class V`, standalone backward, S-list, inlined ops |
-| `picogpt_formatted.py`| 114 | 2761 | 1770 | Formatted version of `picogpt.py` for code study |
+| `picogpt_v2.py` | 84 | 1877 | 1593 | Further golfed: paired children/grads, removed `__truediv__`, flattened params |
+| `picogpt_formatted.py`| 95 | 2761 | 1770 | Formatted version of `picogpt.py` for code study |
+| `picogpt_v2_formatted.py`| 96 | 2584 | 1611 | Formatted version of `picogpt_v2.py` for code study |
 | `picogpt_commented.py`| 540 | — | — | Heavily commented educational guide |
 
-`picogpt.py` is a 65% reduction in non-whitespace characters vs the original (1800 vs 5089). All versions produce bit-identical output (same losses, same generated samples).
+`picogpt_v2.py` is a 69% reduction in non-whitespace characters vs the original (1593 vs 5089). All versions produce bit-identical output (same losses, same generated samples).
 
 ## Install
 ```
@@ -28,5 +30,5 @@ Download dataset
 
 Run training
 ```
-uv run picogpt.py
+uv run picogpt_v2.py
 ```
